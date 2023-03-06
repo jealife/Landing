@@ -4,10 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif; 
-    
-}
-body{
+    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 main {
@@ -42,7 +39,7 @@ p {
     min-height: 100vh;
     min-width: 100%;
     background-color: #4141;
-    background-image: url(img/milad.jpg);
+    background-image: url(/img/milad.jpg);
     background-position-x: -135px;
     background-position-y: -42rem;
     background-repeat: no-repeat;
@@ -60,7 +57,7 @@ p {
     min-height: 100vh;
     min-width: 100%;
     background-color: #4141;
-    background-image: url(https://unsplash.it);
+    background-image: url(/img/milad.jpg);
     background-position-x: -135px;
     background-position-y: -100rem;
     background-repeat: no-repeat;
@@ -116,14 +113,13 @@ body{
     }
 
     .main-1 {
-        padding: 5rem 2rem;
         padding: 10rem 2rem 10rem 2rem;
         background-position-x: -1060px;
         background-position-y: -60rem;
     }
 
     .main-2 {
-        text-align: center;
+        text-align: left;
         padding: 5rem 2rem;
         min-height: 100vh;
         min-width: 100%;
