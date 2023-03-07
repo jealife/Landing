@@ -152,11 +152,7 @@ a{
     }
 
     .main-2 {
-        text-align: left;
-        padding: 5rem 2rem;
-        min-height: 100vh;
-        min-width: 100%;
-
+        text-align: center;
     }
       
       .section {
