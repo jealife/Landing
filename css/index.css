@@ -55,8 +55,6 @@ p {
 }
 
 .main-2 {
-    overflow-y: scroll;
-    overflow-x: hidden;
     text-align: right;
     padding: 10rem;
     min-height: max-content;
