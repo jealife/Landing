@@ -184,7 +184,7 @@ div {
     background-position-x: -120rem;
     background-position-y: -100rem;
     background-repeat: no-repeat;
-    height: ;
+    height:100vh ;
     overflow-y: hidden;
     overflow-x: hidden;
   }
