@@ -18,7 +18,7 @@
 
   </header>
   <main>
-    <div class="container main-1">
+    <div class="container main-1 scrollable">
       <div class="title">
         <h1 data-aos="fade-right" data-aos-duration="1000">
           The Abstract sphere
@@ -34,7 +34,7 @@
       </div>
       <div></div>
     </div>
-    
+
     <div class="wrapper">
       <div class="section section-1" id="founder">
         <div id="founder" class="main-2 x">
@@ -86,7 +86,7 @@
         </div>
         <div></div>
       </div>
-      <div class="section section-2" id="f">
+      <div class="section section-2 scrollable" id="f">
         <h1> sec2 </h1>
       </div>
     </div>
@@ -102,19 +102,8 @@
 
 
   <script>
-    const container = document.getElementById("srollH");
-    // where "container" is the id of the container
-    container.addEventListener("wheel", function (e) {
-      if (e.deltaY > 0) {
-        container.scrollLeft += 100;
-        e.preventDefault();
-        // prevenDefault() will help avoid worrisome 
-        // inclusion of vertical scroll 
-      }
-      else {
-        container.scrollLeft -= 100;
-        e.preventDefault();
-      }
+    document.querySelector('.scrollable').forEach(function (item) {
+      item.addEventListener('wheel', preventScroll);
     });
   </script>
 </body>
