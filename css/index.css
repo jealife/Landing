@@ -197,6 +197,11 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+    }
     .container {
         flex-direction: column;
 
