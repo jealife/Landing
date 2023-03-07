@@ -36,8 +36,7 @@ p {
 }
 
 .main-1 {
-    overflow-y: scroll;
-    overflow-x: hidden;
+    
     text-align: left;
     padding: 10rem;
     min-height: 100vh;
@@ -60,9 +59,9 @@ p {
     overflow-x: hidden;
     text-align: right;
     padding: 10rem;
-    min-height: 100vh;
+    min-height: max-content;
     min-width: 100%;
-    background-color: #4141;
+    background-color: #d5f1f5;
     background-image: url(/img/milad.jpg);
     background-position-x: -135px;
     background-position-y: -100rem;
