@@ -8,12 +8,59 @@
     scroll-behavior: smooth;
 }
 
-main {
-    min-width: 100%;
-    background-color: #4141;
-    transition: 1s;
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    height: 100vh;
+    transition: 0.5;
 }
 
+.section {
+    flex: 0 0 100%;
+    height: 100vh;
+    background-color: #ccc;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+.wrapper {
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.home{
+    background-image: url(/milad.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.portfolio{
+    background-image: url(/jj-ying.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about{
+    background-image: url(/mymind.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+//////////////////////
 .container {
     display: flex;
     justify-content: center;
@@ -33,16 +80,14 @@ h1 {
 p {
     font-size: 1.5rem;
     color: #ffffff;
+    margin-right: 2rem;
 }
 
 .main-1 {
-    
+    padding:5rem 2rem ;
     text-align: left;
-    padding: 10rem;
     min-height: 100vh;
     min-width: 100%;
-    background-color: #4141;
-    background-image: url(/img/milad.jpg);
     background-position-x: -135px;
     background-position-y: -42rem;
     background-repeat: no-repeat;
@@ -50,8 +95,16 @@ p {
 
 
 
-.main-1 div {
+.title {
     flex: 1;
+    border: 1px black solid;
+}
+.empty{
+    flex: 1;
+    border: 1px rgb(255, 255, 255) solid;
+    height: 500px;
+    background-color: #001d3d;
+    width: 250px;
 }
 
 .main-2 {
@@ -59,8 +112,6 @@ p {
     padding: 10rem;
     min-height: max-content;
     min-width: 100%;
-    background-color: #d5f1f5;
-    background-image: url(/img/milad.jpg);
     background-position-x: -135px;
     background-position-y: -100rem;
     background-repeat: no-repeat;
@@ -84,10 +135,14 @@ p {
     width: 200px;
     padding: 1rem;
     margin: 0.5rem;
+    border: none;
     border-radius: 45px;
     font-size: 1.5rem;
     font-weight: 700;
     transition: 0.5s;
+}
+a{
+    text-decoration: none;
 }
 
 .btn button:hover {
@@ -115,93 +170,8 @@ p {
     color: #001d3d;
 }
 
-::-webkit-scrollbar {
-    width: 1px;
-    height: 1px;
-}
-
-::-webkit-scrollbar-button {
-    width: 1px;
-    height: 1px;
-}
-
-body {
-    background: #111;
-}
-
-div {
-    box-sizing: border-box;
-}
-
-.horizontal-scroll-wrapper {
-    display: block;
-    width: calc(250px + 1px);
-    min-height: 100vh;
-    margin: 0;
-    padding-top: 1px;
-    background: #abc;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transform: rotate(-90deg) translateY(-250px);
-    transform-origin: right top;
-}
-
-.horizontal-scroll-wrapper>div {
-    display: block;
-    transform: rotate(90deg);
-    transform-origin: right top;
-}
-
-.squares {
-    padding: 250px 0 0 0;
-}
-
-.squares>div {
-    width: 100%;
-    margin: 10px 0;
-}
-
-.wrapper {
-    width: 200%;
-    height: max-content;
-    overflow-x: scroll;
-  }
-  
-  .section {
-    width: 50%;
-    float: left;
-  }
-  
-  .section-1 {
-    background-color: #e6e6e6;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  
-  .section-2 {
-    background-color: #f2f2f2;
-    background-image: url(/img/milad.jpg);
-    background-position-x: -120rem;
-    background-position-y: -100rem;
-    background-repeat: no-repeat;
-    height:100vh ;
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
-
-
-
-body {
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
 @media only screen and (max-width: 900px) {
-    body {
-        overflow-x: hidden;
-        overflow-y: hidden;
-        scroll-behavior: smooth;
-    }
+    
     .container {
         flex-direction: column;
 
@@ -213,8 +183,6 @@ body {
 
     .main-1 {
         padding: 10rem 2rem 10rem 2rem;
-        background-position-x: -1060px;
-        background-position-y: -60rem;
     }
 
     .main-2 {
@@ -222,9 +190,29 @@ body {
         padding: 5rem 2rem;
         min-height: 100vh;
         min-width: 100%;
-        background-position-x: -1060px;
-        background-position-y: -60rem;
 
     }
+
+    .wrapper {
+        width: 200%;
+        height: max-content;
+        overflow-x: scroll;
+      }
+      
+      .section {
+        width: 50%;
+        float: left;
+      }
+      
+      .section-1 {
+        background-color: #e6e6e6;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+      
+      .section-2 {
+        background-color: #7ccff3;
+    }
+    
 
 }
