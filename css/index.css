@@ -163,13 +163,12 @@ div {
 
 .wrapper {
     width: 200%;
-    height: 100vh;
+    height: max-content;
     overflow-x: scroll;
   }
   
   .section {
     width: 50%;
-    height: 100%;
     float: left;
   }
   
@@ -185,6 +184,7 @@ div {
     background-position-x: -120rem;
     background-position-y: -100rem;
     background-repeat: no-repeat;
+    height: ;
     overflow-y: hidden;
     overflow-x: hidden;
   }
